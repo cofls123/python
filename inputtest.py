@@ -1,20 +1,23 @@
-#input = 값을 입력받는 함수
-num1 = input("숫자1 => ")
+num1 = input("숫자1 ==> ")
 num1 = int(num1)
-print(num1)
 
-num2 = input("숫자2 => ")
-print(num2)
+num2 = input("숫자2 ==> ")
 num2 = int(num2)
 
 numSum = num1 + num2
 print(num1, '+', num2, '=', numSum)
 
-numSum = num1 + num2
-print(num1, '-', num2, '=', numSum)
+numDiff = num1 - num2
+print(num1, '-', num2, '=', numDiff)
 
-numSum = num1 + num2
-print(num1, '*', num2, '=', numSum)
+numProd = num1 * num2
+print(num1, '*', num2, '=', numProd)
 
-numSum = num1 + num2
-print(num1, '÷', num2, '=', numSum)
+numQuot = num1 / num2
+print(num1, '/', num2, '=', numQuot)
+
+numRem = num1 % num2
+print(num1, '%', num2, '=', numRem)
+
+numPow = num1 ** num2
+print(num1, '**', num2, '=', numPow)
