@@ -16,6 +16,7 @@ def btn_click():
     labelRest2 = tkinter.Label(root,text=str2, font=('맑은고딕',10))
     labelRest2.place(x=21,y=110)
 
+
 #기본 틀
 root = tkinter.Tk()
 root.title('산술 연산자')
