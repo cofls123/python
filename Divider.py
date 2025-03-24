@@ -7,13 +7,13 @@ def btn_click():
     num2 = int(entry2.get())
 
     str1 = str(num1) + '을(를)' + str(num2) + '(으)로 나눈 몫은' + str(num1//num2) + '입니다.'
-    str1 = str(num1) + '을(를)' + str(num2) + '(으)로 나눈 나머지은' + str(num1%num2) + '입니다.'
+    str2 = str(num1) + '을(를)' + str(num2) + '(으)로 나눈 나머지은' + str(num1%num2) + '입니다.'
 
 
     labelRest1 = tkinter.Label(root,text=str1, font=('맑은고딕',10))
     labelRest1.place(x=21,y=86)
 
-    labelRest2 = tkinter.Label(root,text=str1, font=('맑은고딕',10))
+    labelRest2 = tkinter.Label(root,text=str2, font=('맑은고딕',10))
     labelRest2.place(x=21,y=110)
 
 root = tkinter.Tk()
