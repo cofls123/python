@@ -98,11 +98,12 @@ D4_BN.place(x=490,y=150)
 D5_BN.place(x=610,y=150)
 D6_BN.place(x=720,y=150)
 
-
+D1_SN.insert(0,"2") #좌표(순번번) , 숫자
 
 #버튼 생성
 btn = tkinter.Button(root, text='계산', font=('맑은고딕',10), command=btn_click)
 btn.place(x=80,y=200,width=700,height=30)
+
 
 
 
