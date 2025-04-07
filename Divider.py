@@ -20,12 +20,12 @@ def btn_click():
     labelRest2.place(x=21,y=110)
 
 
-#이벤트 실행
+#이벤트_실행
 def mouseMove(event):
     x = event.x
     y = event.y
     
-    #라벨 값 수정
+    #라벨 값 수정(0,0)
     labelMouse.config(text=str(x)+','+str(y))
     #좌표 라벨 위치
     labelMouse.place(x=0,y=90)
@@ -37,9 +37,9 @@ root = tkinter.Tk()
 root.title('산술 연산자')
 root.geometry('400x400')
 
-#이벤트 감지
+#이벤트_감지
 root.bind('<Motion>', mouseMove)
-#좌표 내용
+#이벤트_좌표 내용
 labelMouse = tkinter.Label(root, text=', ', font=('맑은고딕',10))
 
 
