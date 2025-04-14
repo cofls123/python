@@ -15,7 +15,7 @@ while(True):
     print(count,'회:',dice1, dice2, dice3) #n 회:
 
 #주사위 눈 확인(종료)
-    if (dice1 == dice2 == dice3):
+    if (dice1 == dice2) and (dice1==dice3):
         break
 
 #결과 출력

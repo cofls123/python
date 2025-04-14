@@ -45,7 +45,7 @@ def click_btnCheck():
 def nextGame():
     global entryLec1, entryLec2, entryLec3, btnCheck
     labelCount = tkinter.Label(root, text=str(count)+"회", font=("맑은 고딕",10))
-    labelCount.place(x=15,y=15+count*25)
+    labelCount.place(x=15,y=15+count*25) #배치에도 반복문 활용 가능 / 반복하면서 어떤 변수가 바뀌는지 알아야 함
 
     entryLec1 = tkinter.Entry(width=2)
     entryLec2 = tkinter.Entry(width=2)
