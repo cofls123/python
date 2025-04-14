@@ -1,11 +1,11 @@
 import tkinter
-import tkinter.messagebox as msgbox
+import tkinter.messagebox as msgbox #메세지 박스 만들기기
 import random
 
 #좌표 출력기
 def mouseMove(event):
     x = event.x
-    y = event.y    
+    y = event.y
     labelMouse["text"]=str(x)+","+str(y)
 
 def click_btnCheck():
@@ -73,7 +73,7 @@ count = 1
 #문제 제출
 answer = str(random.randint(100,999))
 print(answer)
-while (answer[0] == answer[1]) or (answer[1] == answer[2]) or (answer[0] == answer[2]):
+while (answer[0] == answer[1]) or (answer[1] == answer[2]) or (answer[0] == answer[2]): #중복되는 숫자가 있는지 비교하는 코드 => 사용자 입력값 비교도 이걸로 사용/ entryLec1(값 입력 변수)
     answer = str(random.randint(100,999))
     print(answer)
 
