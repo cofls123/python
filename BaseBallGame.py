@@ -10,7 +10,7 @@ def mouseMove(event):
 
 def click_btnCheck():
     global count, btnCheck
-    #입력 유효성 확인
+    #입력 유효성 확인 / 아무것도 X or 0개 작성 시 return
     if (entryLec1.get() == "") or (entryLec2.get() == "") or (entryLec3.get() == "") :
         return
     elif (len(entryLec1.get()) != 1) or (len(entryLec2.get()) != 1) or (len(entryLec3.get()) != 1):
@@ -21,9 +21,36 @@ def click_btnCheck():
     successGame = False                         #성공 여부 확인 변수
     #-------------------과제 영역 시작-----------------------#
     #정답인 경우 successGame를 참으로 지정
+    #strike = 위치, 숫자
+    #ball = 숫자
+
 
     strike = 0
     ball = 0
+
+    if (entryLec1.get() == answer[0]) and (entryLec2.get() == answer[1]) and (entryLec3.get() == answer[2]):
+        print('정답!')
+        successGame = True
+
+
+    #strike
+    if (entryLec1.get() == answer[0]):
+        strike = strike+1
+    elif (entryLec1.get() == answer[1]) or (entryLec1.get() == answer[2]):
+        ball = ball+1
+
+    if (entryLec2.get() == answer[1]):
+        strike = strike+1
+    elif (entryLec2.get() == answer[0])  or (entryLec2.get() == answer[2]):
+        ball = ball+1
+
+    if (entryLec3.get() == answer[2]):
+        strike = strike+1
+    elif (entryLec3.get() == answer[0]) or (entryLec3.get() == answer[1]):
+        ball = ball+1
+
+
+
     output_str = str(strike)+"S"+" "+str(ball)+"B"
     btnCheck["text"] = (output_str)
     #------------------- 과제 영역 끝 -----------------------#

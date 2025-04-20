@@ -28,24 +28,24 @@ for i in range(0,3,1):
 #실습2
 #2단부터 9단까지 구구단을 출력하는 구구단 계산기
 
-#for num1 in range(2,10,1): #단
-#    print('-----구구단',num1,'단------')
-#    for num2 in range(1,10,1): #곱해지는 수
-#        print(num1,'X',num2,'=\t', num1*num2)
+for num1 in range(2,10,1): #단
+    print('-----구구단',num1,'단------')
+    for num2 in range(1,10,1): #곱해지는 수
+        print(num1,'X',num2,'=\t', num1*num2)
 
 
 #while문 / 조건을 무한으로 만듦
-#while(True):
-#    num1 = int(input('숫자1 ==> '))
-#    #num1이 0이면 반복문 종료
-#    if num1 == 0:
-#        continue
-#
-#    num2 = int(input('숫자2 ==> '))
-#    if num2 == 0:
-#        continue
-#
-#    print(num1,'+',num2,'=',num1+num2)
+while(True):
+    num1 = int(input('숫자1 ==> '))
+    #num1이 0이면 반복문 종료
+    if num1 == 0:
+        continue
+
+    num2 = int(input('숫자2 ==> '))
+    if num2 == 0:
+        continue
+
+    print(num1,'+',num2,'=',num1+num2)
 
 
 #연습2
