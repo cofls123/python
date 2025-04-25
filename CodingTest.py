@@ -1,4 +1,4 @@
-#1.계산기 만들기
+##1.계산기 만들기
 
 #num1 = int(input('숫자1==> '))
 #num2 = int(input('숫자2 ==> '))
@@ -18,7 +18,7 @@
 #print(num1, '%', num2, '=', result6)
 
 
-#2.택배 받기
+##2.택배 받기
 
 #print('## 택배를 보내기 위한 정보를 입력하세요. ##')
 #Name = input('받는 사람: ')
@@ -31,7 +31,7 @@
 #print('배송비 ==> ', G*5, '원')
 
 
-#3.헬스장
+##3.헬스장
 
 #P1 = int(input('파운드(1b)를 입력하세요 : '))
 #P2 = P1*0.453592
@@ -42,7 +42,7 @@
 #print(K1, '킬로그램(kb)는 ', K2, '파운드(1b)입니다')
 
 
-#4.편의점 / tkinter, entry(값입력받기 +entry.get() )
+##4.편의점 / tkinter, entry(값입력받기 +entry.get() )
 
 #import tkinter
 #
@@ -145,7 +145,8 @@
 #print('반대 문자열 ==> ', str(strOut))
 
 
-#PC방
+##5.PC방
+
 #Age = int(input('나이를 입력 ==> '))
 #
 #if Age<19:
@@ -155,19 +156,95 @@
 #    print('하던 거 하세요~')
 
 
-#캔버스
+##6.캔버스
+
+#import tkinter
+#import random
+#
+#root=tkinter.Tk()
+#root.title=('캔버스 연습')
+#
+#canvas = tkinter.Canvas(root, width=800 , height=600 , bg='skyblue')
+#canvas.pack()
+#
+#bgimg = tkinter.PhotoImage(file="miko.png")
+#canvas.create_image(400,300, image = bgimg)
+#
+#def btn_click():
+#    
+#    label['text']=random.choice(['대길','중길','소길','흉'])
+#
+#
+##라벨 생성
+#
+#label = tkinter.Label(root, text='??', font=('맑은 고딕', 130))
+#label.place(x=333, y=66, width=400 , height=200)
+#
+##버튼
+#btn = tkinter.Button(root, text='돌려라~', font=('맑은 고딕', 30), command=btn_click)
+#btn.place(x=379, y=370, width=300, height=100)
+#
+#
+#
+##좌표 출력기
+#def mouseMove(event):
+#    x=event.x
+#    y=event.y
+#    labelMouse.config(text=str(x)+', '+str(y))
+#    labelMouse.place(x=743,y=567)
+#
+#root.bind('<Motion>', mouseMove)
+#labelMouse = tkinter.Label(root, text=', ', font=('맑은 고딕', 10))
+#
+#root.mainloop()
+
+
+##7.주사위 3개를 동시에 던져 동일한 숫자 나오기
+#import random
+#
+#count=0
+#num1=0
+#num2=0
+#num3=0
+#
+#while (True):
+#    num1=random.randint(1,6)
+#    num2=random.randint(1,6)
+#    num3=random.randint(1,6)
+#    count+=1
+#    print(count, '번: ', num1, num2, num3)
+#
+#    if (num1 == num2) and (num2 == num3):
+#        break
+#
+#print('3개의 주사위는 모두' ,num1 , '입니다.')
+#print('같은 숫자가 나오기까지',count, '번 던졌습니다.')
+
+
+#8.1-100까지 더하되 3의 배수, 4의 배수는 더하지 않음
+#res=0
+#for i in range(1,101,1):
+#    if i%4 == 0:
+#        continue
+#    
+#    elif i%3 == 0:
+#        continue
+#    
+#    res+=i
+#
+#print(res)
+
+
+##9.야구게임
+import random
 import tkinter
 
-root.bind =('<Motion>', mouseMove)
+root = tkinter.Tk()
+root.title('야구게임')
+root.geometry('250x270')
 
-root=tkinter.Tk()
-root.title=('캔버스 연습')
 
-canvas = tkinter.Canvas(root, width=800 , height=600 , bg='skyblue')
-canvas.pack()
 
-bgimg = tkinter.PhotoImage(file="miko.png")
-canvas.create_image(400,300, image = bgimg)
 
 
 root.mainloop()

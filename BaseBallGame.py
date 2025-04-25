@@ -1,5 +1,5 @@
 import tkinter
-import tkinter.messagebox as msgbox #메세지 박스 만들기기
+import tkinter.messagebox as msgbox #메세지 박스 만들기
 import random
 
 #좌표 출력기
