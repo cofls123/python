@@ -64,9 +64,9 @@ SamS = tkinter.Entry(width=5)
 SamS.place(x=200, y=80)
 
 CanB.insert(0,'5')
-SamB.insert(0,'10')
+SamB.insert(0,'5')
 CanS.insert(0,'5')
-SamS.insert(0,'20')
+SamS.insert(0,'5')
 
 #버튼
 btn = tkinter.Button(root, text='계산~', font=('맑은 고딕',10), command=btn_click)
