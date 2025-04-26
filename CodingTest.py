@@ -234,17 +234,3 @@
 #
 #print(res)
 
-
-##9.야구게임
-import random
-import tkinter
-
-root = tkinter.Tk()
-root.title('야구게임')
-root.geometry('250x270')
-
-
-
-
-
-root.mainloop()
