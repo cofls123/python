@@ -1,7 +1,6 @@
 import tkinter
 import random
 
-
 root = tkinter.Tk()
 root.title = ('캔버스 만들기')
 
@@ -28,9 +27,6 @@ label.place(x=333 ,y=66 ,width=400, height=200)
 #버튼 생성
 bnt = tkinter.Button(root, text='제비뽑기', font=('맑은고딕', 30), fg='skyblue', command=click_btn)
 bnt.place(x=339 ,y=370 ,width=300, height=100)
-
-
-
 
 
 #이벤트 생성(마우스 커서 좌표)

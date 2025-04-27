@@ -25,25 +25,26 @@ def click_btnCheck():
     strike = 0
     ball = 0
 
+    #entry[] 값과 랜덤 answer[] 조건문으로 비교
+    #성공하고 종료 / 전부 위치+숫자
     if (entryLec1.get() == answer[0]) and (entryLec2.get() == answer[1]) and (entryLec3.get() == answer[2]):
-        print('이걸 맞추네...?')
         successGame = True
 
-   #strike 비교하고 ball 바로 비교하기
+    #스트라이크 / 일부 위치+숫자  /   #볼 / 숫자
     if (entryLec1.get() == answer[0]):
-        strike = strike+1
-    elif (entryLec1.get() == answer[1]) or (entryLec1.get() == answer[2]):
-        ball = ball+1
+        strike+=1
+    elif (entryLec1.get()==answer[1]) or (entryLec1.get()==answer[2]):
+        ball+=1
 
     if (entryLec2.get() == answer[1]):
-        strike = strike+1
-    elif (entryLec2.get() == answer[0])  or (entryLec2.get() == answer[2]):
-        ball = ball+1
+        strike+=1
+    elif (entryLec2.get()==answer[0]) or (entryLec1.get()==answer[2]):
+        ball+=1
 
     if (entryLec3.get() == answer[2]):
-        strike = strike+1
-    elif (entryLec3.get() == answer[0]) or (entryLec3.get() == answer[1]):
-        ball = ball+1
+        strike+=1
+    elif (entryLec3.get()==answer[1]) or (entryLec1.get()==answer[0]):
+        ball+=1
 
 
     output_str = str(strike)+"S"+" "+str(ball)+"B"
