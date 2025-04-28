@@ -203,17 +203,27 @@
 
 
 ##학점
-score = int(input('점수 입력 ==> '))
+#score = int(input('점수 입력 ==> '))
+#
+#
+#if score >= 90:
+#    print('A학점입니다.')
+#elif score >= 80:
+#    print('B학점입니다.')
+#elif score >= 70:
+#    print('C학점입니다.')
+#elif score >= 60:
+#    print('D학점입니다.')
+#
+#else:
+#    print('응 F')
 
 
-if score >= 90:
-    print('A학점입니다.')
-elif score >= 80:
-    print('B학점입니다.')
-elif score >= 70:
-    print('C학점입니다.')
-elif score >= 60:
-    print('D학점입니다.')
-
-else:
-    print('응 F')
+#팩토리얼얼
+#N = 5
+#total = 1
+#
+#for i in range(1, N+1, 1):
+#    total *= i
+#
+#print(total)
