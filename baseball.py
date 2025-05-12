@@ -3,7 +3,6 @@
 import random
 
 
-
 #랜덤 숫자 생성(3개)
 secretLen = 3
 secretList = random.sample(range(10), secretLen)
