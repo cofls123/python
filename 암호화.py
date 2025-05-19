@@ -14,17 +14,17 @@ while True:
     #strFile의 값이 없을 때 break
     if (strFile == ''):
         break
-    #strFile
-    strFileChange = '' #이 밑에서 변환시킨 값은 여기에 저장할거야. 그래서 빈칸을 변수로
+    #strFile #암호화 시킨 값 => 저장(strFileChange)
+    strFileChange = ''
     for ch in strFile:
         #암호화 / ord() : str => int // chr() : int => str
         chNum = ord(ch)
         chNum = chNum + 100
         chChange = chr(chNum)
         #기록
-        strFileChange += chChange #여기서 더하면 아까 빈칸이었던 곳이 채워지겠지.
+        strFileChange += chChange 
     outFile.writelines(strFileChange)
-
+print('--------text.txt 암호화 완료--------')
 
 inFile.close()
 outFile.close()
