@@ -12,12 +12,15 @@ canvas.pack() #알아서 배치함 (0,0)
 bgimg = tkinter.PhotoImage(file="miko.png")
 canvas.create_image(400,300,image=bgimg) #스티커 붙이기(중심점 설정)
 
+canvas.create_rectangle(330,365, 647,474, fill='darkgray', outline='red', width='5') #캔버스 내에 그림 그리기
+
 #root - canvas - bgimg 연결성 인식(객체지향)
 
 
 #랜덤 라벨 문자열
 def click_btn():
     label['text']=random.choice(['대길','중길','소길','흉'])
+    text.insert(tkinter.END, label['text']+'\n')
 
 
 #라벨 생성
@@ -39,5 +42,9 @@ def mouseMove(event):
 
 root.bind('<Motion>', mouseMove)
 labelMouse = tkinter.Label(root, text=', ', font=('맑은고딕',10))
+
+#text 추가
+text=tkinter.Text()
+text.place(x=2,y=600,width=800,height=200)
 
 root.mainloop()
