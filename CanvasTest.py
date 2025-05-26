@@ -45,6 +45,6 @@ labelMouse = tkinter.Label(root, text=', ', font=('맑은고딕',10))
 
 #text 추가
 text=tkinter.Text()
-text.place(x=2,y=600,width=800,height=200)
+text.pack()
 
 root.mainloop()

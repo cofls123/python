@@ -1,4 +1,5 @@
-# answer = tkinter.messagebox.askyesno('제목','오징어 게임에 참가하시겠습니까?')
+#  import tkinter.messagebox
+#  answer = tkinter.messagebox.askyesno('제목','오징어 게임에 참가하시겠습니까?')
 #        if answer == True:
 #            print('동의')
 #        else:
@@ -7,8 +8,7 @@
 #cbtn.getboolean : 안의 값 확인 함수
 
 import tkinter
-import random
-import tkinter.messagebox
+
 
 root = tkinter.Tk()
 root.title('10주차')
@@ -27,7 +27,7 @@ result = [
     ' 겉모습은 사람이지만, 속은 고양이일 가능성이 있습니다.'
 ]
 
-#체크 버튼 클릭시
+#체크 버튼 클릭시 #여기에 이펙트로 대체 가능
 def chkBtnClick():
     numCheck = 0 #체크한 개수 확인 변수
     if cvalue1.get() == True: numCheck +=1
