@@ -12,7 +12,7 @@ canvas.pack() #알아서 배치함 (0,0)
 bgimg = tkinter.PhotoImage(file="miko.png")
 canvas.create_image(400,300,image=bgimg) #스티커 붙이기(중심점 설정)
 
-canvas.create_rectangle(330,365, 647,474, fill='darkgray', outline='red', width='5') #캔버스 내에 그림 그리기
+canvas.create_rectangle(330,365,647,474, fill='darkgray', outline='red', width='5') #캔버스 내에 그림 그리기
 
 #root - canvas - bgimg 연결성 인식(객체지향)
 
