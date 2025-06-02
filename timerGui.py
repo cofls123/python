@@ -19,5 +19,6 @@ root.geometry('300x200')
 label = tkinter.Label(text=tmr, font=('궁서체', 80))
 label.pack()
 
+countUp()
 
 root.mainloop()
